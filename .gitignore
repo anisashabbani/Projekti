@@ -3,16 +3,20 @@
 Thumbs.db
 desktop.ini
 
-# Editor Files
+# Editor directories and files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Temporary Files
-*.tmp
+# Logs
 *.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
 *.cache
 
 # Node modules (if you add them later)

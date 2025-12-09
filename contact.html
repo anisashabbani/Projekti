@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - A&E Beauty Salon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>A&E Beauty Salon</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Faqja Kryesore</a></li>
+                    <li><a href="about.html">Rreth Nesh</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                    <li><a href="login.html">Kyçu</a></li>
+                    <li><a href="register.html">Regjistrohu</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Na Kontaktoni</h1>
+                <p>Jemi këtu për t'ju ndihmuar</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Informacione Kontakti</h2>
+                        <div class="info-item">
+                            <h3>Adresa</h3>
+                            <p>Rruga e Dëshmorëve, Nr. 123<br>Tirana, Shqipëri</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Telefon</h3>
+                            <p>+355 XX XXX XXXX</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Email</h3>
+                            <p>info@aebeautysalon.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Orari i Punës</h3>
+                            <p>E Hënë - E Shtunë: 09:00 - 20:00<br>E Dielë: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h2>Dërgoni Mesazh</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Emri dhe Mbiemri *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subjekti *</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mesazhi *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Dërgo Mesazhin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A&E Beauty Salon</h3>
+                    <p>Ku bukuria takon profesionin</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Lidhje të Shpejta</h3>
+                    <ul>
+                        <li><a href="index.html">Faqja Kryesore</a></li>
+                        <li><a href="about.html">Rreth Nesh</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Email: info@aebeautysalon.com</p>
+                    <p>Tel: +355 XX XXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 A&E Beauty Salon. Të gjitha të drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact-validation.js"></script>
+</body>
+</html>
+
