@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us - A&E Beauty</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-left">
+            <a href="home.html">Home</a>
+            <a href="home.html#services">Services</a>
+            <a href="aboutus.html" class="active">About Us</a>
+            <a href="home.html#contact">Contact Us</a>
+        </nav>
+
+        <a href="home.html" class="logo">
+            <img src="salon logo.png" alt="A&E Beauty Logo">
+        </a>
+
+        <div class="header-right">
+            <button class="btn-book" id="bookBtn">Book a Session</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="about-content">
+                <h1>About A&E Beauty</h1>
+                <p class="subtitle">Your trusted beauty partner since 2015</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Welcome to A&E Beauty, where beauty meets excellence. Founded in 2015, we have been dedicated to providing exceptional beauty and wellness services to our valued clients.</p>
+                    <p>Our team of experienced professionals is committed to helping you look and feel your best. We use only the finest products and latest techniques to ensure you receive the highest quality service.</p>
+                    <p>At A&E Beauty, we believe that beauty is not just about appearance—it's about confidence, wellness, and self-care. Every visit to our salon is an opportunity to relax, rejuvenate, and rediscover your inner beauty.</p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">✨</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Excellence</h3>
+                    <p>We strive for perfection in every service we provide</p>
+                </div>
+                <div class="value-card">
+                    <h3>Customer Care</h3>
+                    <p>Your satisfaction and comfort are our top priorities</p>
+                </div>
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>We stay updated with the latest beauty trends and techniques</p>
+                </div>
+                <div class="value-card">
+                    <h3>Integrity</h3>
+                    <p>We maintain honesty and transparency in all our dealings</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 A&E Beauty. All rights reserved.</p>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Session</h2>
+            <form id="bookingForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="hair">Hair Styling</option>
+                    <option value="nails">Nail Care</option>
+                    <option value="facial">Facial Treatment</option>
+                    <option value="massage">Massage Therapy</option>
+                </select>
+                <input type="date" required>
+                <input type="time" required>
+                <button type="submit" class="btn-primary">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

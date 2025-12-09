@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>A&E Beauty - Faqja Kryesore</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav-left">
+            <a href="home.html" class="active">Faqja Kryesore</a>
+            <a href="sherbimet.html">Shërbimet</a>
+            <a href="rreth-nesh.html">Rreth nesh</a>
+            <a href="#contact">Kontakti</a>
+        </nav>
+
+        <a href="home.html" class="logo">
+            <img src="salon logo.png" alt="A&E Beauty Logo">
+        </a>
+
+        <div class="header-right">
+            <a href="login.html" class="btn-login">Hyr</a>
+            <button class="btn-book" id="bookBtn">Rezervo</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="background">
+                <img src="background.png" alt="Sallon bukurie">
+            </div>
+            <div class="hero-content">
+                <h1>Mirë se vini në A&E Beauty</h1>
+                <p>Udhëtimi juaj drejt bukurisë dhe shëndetit fillon këtu</p>
+                <a href="sherbimet.html" class="btn-primary">Shiko Shërbimet</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Shërbimet tona</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="window.location.href='detaje-sherbimi.html?id=1'">
+                    <div class="service-icon">💇</div>
+                    <h3>Stilizim Flokësh</h3>
+                    <p>Prerje profesionale, ngjyrosje dhe stilizim flokësh</p>
+                    <a href="detaje-sherbimi.html?id=1" class="btn-link">Më shumë →</a>
+                </div>
+                <div class="service-card" onclick="window.location.href='detaje-sherbimi.html?id=2'">
+                    <div class="service-icon">💅</div>
+                    <h3>Kujdesi i Thonjve</h3>
+                    <p>Manikyr, pedikyr dhe dizajn thonjsh</p>
+                    <a href="detaje-sherbimi.html?id=2" class="btn-link">Më shumë →</a>
+                </div>
+                <div class="service-card" onclick="window.location.href='detaje-sherbimi.html?id=3'">
+                    <div class="service-icon">✨</div>
+                    <h3>Trajtim i Fytyrës</h3>
+                    <p>Trajtime fytyre për lëkurë të shkëlqyer</p>
+                    <a href="detaje-sherbimi.html?id=3" class="btn-link">Më shumë →</a>
+                </div>
+                <div class="service-card" onclick="window.location.href='detaje-sherbimi.html?id=4'">
+                    <div class="service-icon">💆</div>
+                    <h3>Masazh Terapi</h3>
+                    <p>Shërbime masazhi relaksuese dhe terapeutike</p>
+                    <a href="detaje-sherbimi.html?id=4" class="btn-link">Më shumë →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Na kontaktoni</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informacione kontakti</h3>
+                    <p><strong>Telefoni:</strong> +355 69 123 4567</p>
+                    <p><strong>Email:</strong> info@aebeauty.com</p>
+                    <p><strong>Adresa:</strong> Rruga Dëshmorët e Kombit, Tiranë</p>
+                    <p><strong>Orari:</strong> E Hënë - E Shtunë: 9:00-19:00, E Diel: 10:00-17:00</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="contactName" placeholder="Emri juaj" required>
+                    <span class="error-message" id="nameError"></span>
+                    <input type="email" id="contactEmail" placeholder="Email juaj" required>
+                    <span class="error-message" id="emailError"></span>
+                    <textarea id="contactMessage" placeholder="Mesazhi juaj" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                    <button type="submit" class="btn-primary">Dërgo mesazhin</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 A&E Beauty. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Hyrje - A&E Beauty</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-left">
+            <a href="home.html">Faqja Kryesore</a>
+            <a href="sherbimet.html">Shërbimet</a>
+            <a href="rreth-nesh.html">Rreth nesh</a>
+            <a href="home.html#contact">Kontakti</a>
+        </nav>
+
+        <a href="home.html" class="logo">
+            <img src="salon logo.png" alt="A&E Beauty Logo">
+        </a>
+
+        <div class="header-right">
+            <a href="login.html" class="btn-login active">Hyr</a>
+            <a href="register.html" class="btn-register">Regjistrohu</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-container">
+                <h1>Hyr në llogari</h1>
+                <p>Nuk keni llogari? <a href="register.html">Regjistrohu këtu</a></p>
+                
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="shkruani email-in tuaj" required>
+                        <span class="error-message" id="loginEmailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword">Fjalëkalimi</label>
+                        <input type="password" id="loginPassword" placeholder="shkruani fjalëkalimin" required>
+                        <span class="error-message" id="loginPasswordError"></span>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Më kujto</span>
+                        </label>
+                        <a href="#" class="forgot-link">Harruat fjalëkalimin?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-full">Hyr</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 A&E Beauty. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
